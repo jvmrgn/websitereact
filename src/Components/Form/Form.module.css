@@ -1,0 +1,60 @@
+.gridContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "name"
+    "contact"
+    "message";
+}
+
+.nameContainer {
+  grid-area: name;
+}
+
+.contactContainer {
+  grid-area: contact;
+  display: flex;
+}
+
+.emailContainer {
+  flex: 1;
+}
+
+.phoneContainer {
+  flex: 1;
+}
+
+.messageContainer {
+  grid-area: message;
+}
+
+.phoneContainer {
+  grid-area: phone;
+}
+
+.submitButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 48rem;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  .contactContainer {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submitButtonContainer {
+    justify-content: center;
+  }
+
+  .submitButton {
+    width: 90%;
+  }
+}

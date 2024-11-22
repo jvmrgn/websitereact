@@ -1,0 +1,28 @@
+.footer {
+  background-color: #3c86c7;
+  padding: 20px;
+  text-align: left;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    margin-top: 2em;
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: 100%%;
+  justify-content: center;
+  padding: 2em;
+}
+
+.navBackdrop {
+  padding: 1em;
+  width: 90%;
+  margin-bottom: 1em;
+}

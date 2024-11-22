@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(65, 63, 62);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.containerAppBar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appNameAnchor {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.projectName {
+  margin-left: 1em;
+  font-size: 1.3rem;
+}
+
+.logo {
+  margin-left: 2em;
+  width: 36px;
+  height: 36px;
+}
+
+.containerBotoes {
+  display: flex;
+  align-items: center;
+}
+
+.botaoApp {
+  padding: 1em 1.8em;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.containerLateral {
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.githubLogo {
+  width: 40px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.hamburguer {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .containerBotoes {
+    display: none;
+  }
+
+  .containerAppBar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerLateral {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .containerBotoes {
+    margin-right: 10em;
+  }
+
+  .logo {
+    margin-right: 30px;
+  }
+}
